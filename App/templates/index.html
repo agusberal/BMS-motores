@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+{% load static %}
     <head>
         <title>BMS Motores</title>
         <!-- Required meta tags -->
@@ -22,17 +23,13 @@
 
     <body>
         <header class="encabezado">
-            <a href="{% url 'inicio' %}"><img src="{% static 'img/index/logo.png' %}" alt="Logo" title="Logo" class="logotipo"></a>
+            <a href="{% url 'inicio' %}"><img src="{% static 'img/BMS(logo)1.jpg' %}" alt="Logo" title="Logo" class="logotipo"></a>
             <nav class="menu_selectivo">
                 <a href="">Agregar</a>
                 <a href="">Visualizar</a>
                 <a href="">Nosotros</a> 
                 <a href="" id="contacto_btn">Contacto</a>
-                {% if user.is_authenticated %}
-                <a href="{% url 'logouts' %}" id="contacto_btn">Logout</a>
-                {% else %}
-                <a href="{% url 'login' %}" id="contacto_btn">Login</a>
-                {% endif %}
+               
             </nav>
         </header>
         <main>

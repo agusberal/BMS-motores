@@ -23,17 +23,45 @@
 
     <body>
         <header class="encabezado">
-            <a href="{% url 'inicio' %}"><img src="{% static 'img/BMS(logo)1.jpg' %}" alt="Logo" title="Logo" class="logotipo"></a>
-            <nav class="menu_selectivo">
+        
+            <nav class="menu">
+                <a href="{% url 'inicio' %}"><img src="{% static 'img/BMS(logo).jpg' %}" alt="Logo" title="Logo" class="logotipo"></a>
                 <a href="">Agregar</a>
                 <a href="">Visualizar</a>
                 <a href="">Nosotros</a> 
                 <a href="" id="contacto_btn">Contacto</a>
-               
+            </nav>
+            <nav class="menu">
+                <a href="">carrito</a>
+                <a href="">LogIn</a> 
             </nav>
         </header>
         <main>
+            {% block cuerpo %}
+            <div class="maincar">
+                <img src="{% static 'img/carmain.jpeg' %}" alt="" srcset="">
+            </div>
 
+            <!-- seleccionar marcas o cuerpo de autos -->
+            <div class="selectcar">
+                <div class="titleselectcar">
+                    <h1>Selecciona un estilo</h1>
+                </div>
+                <div class="menucar">
+
+                </div>
+            </div>
+
+            <!-- ultimos autos  -->
+             <div class="latestcars">
+                <div class="titleselectcar">
+                    <h1>Selecciona un estilo</h1>
+                </div>
+                <div class="menucars">
+
+                </div>
+             </div>
+            {% endblock %}
         </main>
         <footer>
             

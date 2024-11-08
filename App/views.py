@@ -1,6 +1,8 @@
-from django.shortcuts import render
+from django.shortcuts import render,get_object_or_404,redirect
 from .forms import * 
 from .models import *
+from django.contrib.auth import logout
+from django.contrib.auth.decorators import login_required, permission_required
 
 # Create your views here.
 def Home(request):
@@ -10,6 +12,7 @@ def Home(request):
     }
     return render (request,'index.html',data)
 
+@login_required
 def Agregar(request):
     data={
         'forms':Vehiculo()
@@ -23,3 +26,9 @@ def Agregar(request):
                 data['forms']=Vehiculo
             
     return render (request,'pages/Agregar.html', data)
+
+
+
+def salir(request):
+    logout(request)
+    return redirect(to='inicio')

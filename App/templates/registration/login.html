@@ -1,0 +1,7 @@
+{% extends 'index.html' %} {% load static %} {% block main %}
+<form action="" method="post">
+  <h1>Login</h1>
+  {{form}} {% csrf_token %}
+  <input type="submit" value="Login" />
+</form>
+{% endblock %}

@@ -10,5 +10,5 @@ from .forms import *
 
 
 # Register your models here.
-admin.site.register(NuevoVehiculo)
+admin.site.register(Vehiculo)
 

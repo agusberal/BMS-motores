@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 header {
-    height: 70px;
+    height: 90px;
     display: flex;
     justify-content: space-between;
     align-items: center ;
@@ -21,7 +21,7 @@ header a:hover{
         color: #94abbd;
 }
 .logotipo{
-    width: 60px;
+    width: 90px;
 }
 .maincar{
     margin-top: 10px;
@@ -34,27 +34,68 @@ header a:hover{
     border-radius: 15px;
 }
 
-.selectcar{
-    background-color: #f5f5f5;
-    height: 300px;
-    width: 100%;
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+    font-family: Arial, sans-serif;
+  }
+
+.footer-container {
+    width: 90%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-}
-
-.titleselectcar{
     align-items: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .footer-left, .footer-middle, .footer-right {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  .footer-left h2, .footer-middle h3, .footer-right h3 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+  }
+  
+  .footer-left p, .footer-right p {
+    font-size: 1em;
+    line-height: 1.5;
+  }
+  
+  .footer-middle ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-middle ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-middle ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+  }
+  
+  .footer-middle ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-bottom {
     text-align: center;
-}
-
-.latestcars{
-    margin-top: 30px;
-    height: 300px;
-    width: 100%;
-}
-
-footer{
-    height: 300px;
-    width: 100%;
-    background-color: #94abbd;
-}
+    font-size: 0.9em;
+    margin-top: 20px;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+  }

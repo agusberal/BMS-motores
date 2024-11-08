@@ -6,4 +6,5 @@ from .views import *
 
 urlpatterns = [
     path('',Home,name='inicio'),
+    path('agregar', Agregar, name='Agregar'),
 ]

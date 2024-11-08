@@ -31,7 +31,7 @@
             title="Logo"
             class="logotipo"
         /></a>
-        <a href="">Agregar</a>
+        <a href="{% url "Agregar" %}">Agregar</a>
         <a href="">Visualizar</a>
         <a href="">Nosotros</a>
         <a href="" id="contacto_btn">Contacto</a>
@@ -42,7 +42,7 @@
       </nav>
     </header>
     <main>
-      {% block cuerpo %}
+      {% block main %}
       <div class="maincar">
         <img src="{% static 'img/carmain.png' %}" alt="" srcset="" />
       </div>

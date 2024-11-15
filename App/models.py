@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 class Vehiculo(models.Model):
-    Codigo=models.IntegerField(primary_key=True)
+    Codigo=models.AutoField(primary_key=True)
     # Atributos principales
     marca = models.CharField(max_length=50)
     modelo = models.CharField(max_length=50)

@@ -172,4 +172,42 @@ footer {
       font-size: 1.8em;
     }
   }
-  
+#contacto_btl{
+  border: black 1px solid;
+  padding: 7px;
+  border-radius: 5px;
+  color: black;
+}
+
+#contacto_btl:hover{
+  border: #343434 1px solid;
+  background-color: #343434;
+  padding: 7px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.quienes-somos {
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 40px;
+}
+
+.quienes-somos div {
+  margin-bottom: 15px;
+  margin: 30px;
+}
+
+.quienes-somos h3 {
+  color: black;
+  text-align: center;
+}
+
+.quienes-somos p {
+  text-align: center;
+  font-size: 16px;
+  color: #666;
+}
